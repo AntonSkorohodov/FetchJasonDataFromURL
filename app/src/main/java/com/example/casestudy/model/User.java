@@ -1,4 +1,4 @@
-package com.example.anton.urlfetchdata;
+package com.example.casestudy.model;
 
 import android.location.Address;
 
@@ -9,7 +9,7 @@ public class User {
     private String name;
     private String username;
     private String email;
-    private com.example.anton.urlfetchdata.Address address;
+    private com.example.casestudy.model.Address address;
 
     User (int id){
         this.id = id;
@@ -22,14 +22,14 @@ public class User {
         this.email = email;
     }
 
-    User (String name,String username, String email,com.example.anton.urlfetchdata.Address address){
+    User (String name, String username, String email, com.example.casestudy.model.Address address){
         this.name = name;
         this.username = username;
         this.email = email;
         this.address = address;
     }
 
-    public User(int id, String name, String username, String email, com.example.anton.urlfetchdata.Address add) {
+    public User(int id, String name, String username, String email, com.example.casestudy.model.Address add) {
         this.id =id;
         this.name = name;
         this.username = username;

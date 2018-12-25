@@ -1,12 +1,12 @@
-package com.example.anton.urlfetchdata;
+package com.example.casestudy.model;
 
 import com.google.gson.Gson;
 
-class Geo {
+public class Geo {
     private Float lat;
     private Float lng;
 
-    Geo(Float lat, Float lng) {
+    public Geo(Float lat, Float lng) {
         this.lat = lat;
         this.lng = lng;
     }

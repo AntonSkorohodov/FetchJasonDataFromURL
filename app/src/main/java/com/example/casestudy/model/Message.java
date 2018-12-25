@@ -1,13 +1,14 @@
-package com.example.anton.urlfetchdata;
+package com.example.casestudy.model;
 
 import com.google.gson.Gson;
 
-public class Massage {
+//FIXME : Foot massage ? Or body massage ?
+public class Message {
     String massage_id;
     String massage_body;
     String massage_title;
 
-    public Massage(String massage_id, String massage_body, String massage_title) {
+    public Message(String massage_id, String massage_body, String massage_title) {
         setMassage_body(massage_id);
         setMassage_body(massage_body);
         setMassage_title(massage_title);

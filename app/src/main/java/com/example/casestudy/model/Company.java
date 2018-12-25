@@ -1,4 +1,4 @@
-package com.example.anton.urlfetchdata;
+package com.example.casestudy.model;
 
 import com.google.gson.Gson;
 

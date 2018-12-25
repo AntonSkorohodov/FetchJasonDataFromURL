@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@color/backgroundFragment">
 
 
     <TextView
+        android:textColor="#ffffff"
+        android:textStyle="bold"
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -17,6 +21,8 @@
         android:text="Title:" />
 
     <TextView
+        android:textColor="#ffffff"
+        android:textStyle="bold"
         android:id="@+id/title_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -32,6 +38,8 @@
         android:text="some" />
 
     <TextView
+        android:textColor="#ffffff"
+        android:textStyle="bold"
         android:id="@+id/body"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -42,6 +50,8 @@
 
 
     <TextView
+        android:textColor="#ffffff"
+        android:textStyle="bold"
         android:id="@+id/body_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -49,6 +59,7 @@
         android:layout_alignLeft="@+id/title_text"
         android:layout_alignParentBottom="false"
 
-        android:text="someelse" />
+        android:text="someelse"
+        android:paddingBottom="3dp"/>
 
 </RelativeLayout>

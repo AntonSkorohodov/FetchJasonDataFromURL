@@ -1,21 +1,22 @@
-package com.example.anton.urlfetchdata;
+package com.example.casestudy.adapters;
 
 import android.content.Context;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+import com.example.casestudy.R;
+import com.example.casestudy.model.Message;
 
 import java.util.ArrayList;
 
-class MassageListAdapter extends ArrayAdapter<Massage> {
+public class MassageListAdapter extends ArrayAdapter<Message> {
     private static final String TAG = "MassageListAdapter";
     private Context myContext;
     int myResource;
 
-    public MassageListAdapter(Context context, int resource, ArrayList<Massage> objects) {
+    public MassageListAdapter(Context context, int resource, ArrayList<Message> objects) {
         super(context, resource, objects);
         myContext = context;
         myResource = resource;
@@ -28,8 +29,7 @@ class MassageListAdapter extends ArrayAdapter<Massage> {
         body = getItem(position).getMassage_body();
         title = getItem(position).getMassage_title();
 
-       /* body = "hay";
-        title = "kaboom";*/
+
         LayoutInflater layoutInflater = LayoutInflater.from(myContext);
         convertView = layoutInflater.inflate(myResource, parent, false);
 
@@ -38,9 +38,6 @@ class MassageListAdapter extends ArrayAdapter<Massage> {
 
         textView_body.setText(body);
         textView_title.setText(title);
-
-        Log.d(TAG,"////////////////Final Massage//////////////////");
-
 
         return convertView;
     }

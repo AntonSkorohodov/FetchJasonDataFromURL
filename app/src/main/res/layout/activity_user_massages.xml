@@ -4,11 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".UserMassagesActivity">
+    tools:context="com.example.casestudy.activity.UserMessagesActivity">
 
     <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/massage_list_view"/>
+        android:background="@color/colorPrimary"
+        android:id="@+id/massage_list_view" />
 
 </RelativeLayout>

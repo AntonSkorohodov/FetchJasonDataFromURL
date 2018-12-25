@@ -1,4 +1,4 @@
-package com.example.anton.urlfetchdata;
+package com.example.casestudy.model;
 
 import com.google.gson.Gson;
 
@@ -67,7 +67,7 @@ public class Address {
     }
 
     public String getAddress(){
-        return getStreet()+ " " + getSuite() + ", " + getCity() + " " + getZipcode() + geo.getGeo();
+        return getStreet()+ " " + getSuite() + ", " + getCity() + "\n" + getZipcode() +"\n"+ geo.getGeo();
     }
 }
 

@@ -1,4 +1,4 @@
-package com.example.anton.urlfetchdata;
+package com.example.casestudy.adapters;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -6,10 +6,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
+import com.example.casestudy.R;
+import com.example.casestudy.model.User;
 
 import java.util.ArrayList;
 
-class UserListAdapter extends ArrayAdapter<User> {
+public class UserListAdapter extends ArrayAdapter<User> {
     private static final String TAG = "UserListAdapter";
     private Context mContext;
     int mResource;
